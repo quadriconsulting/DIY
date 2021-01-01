@@ -1,0 +1,20 @@
+##Update Raspberry Pi Bootloader and Firmware
+
+
+Image the SDCard with Raspberry Pi Imager:  
+`flatpak run org.raspberrypi.rpi-imager`
+
+select latest Raspberry Pi OS.
+
+On the terminal, run the following:
+sudo apt update && sudo apt full-upgrade -y
+sudo rpi-update  &&  sudo reboot
+
+login
+Log back in:
+sudo rpi-eeprom-update -d -a
+sudo reboot
+sudo raspi-config 
+
+
+ Enable SSH 
